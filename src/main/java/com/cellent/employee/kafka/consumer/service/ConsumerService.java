@@ -17,7 +17,7 @@ public class ConsumerService {
 	@KafkaListener(topics = "sms2", 
             groupId ="group-id" )
     public void consume2(String message) 
-    {//https://github.com/ramubandela/employee.git  E:\employee\employee
+    {//https://github.com/ramubandela/employee.git
 		System.out.println(message+" received2.......");
     }
 	@KafkaListener(topics = "squared", 
